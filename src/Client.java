@@ -7,7 +7,7 @@
 
 
 public class Client {
-    public static void main(String[]agrs){
+    public static void main(String[] args){
         Student studentA;
         Student studentB;
         
