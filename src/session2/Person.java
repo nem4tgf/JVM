@@ -1,6 +1,6 @@
 package session2;
 
-public class Person {
+public class Person extends Object {
     private String name;
     private Integer bornYear;
     private String phone;

@@ -1,10 +1,12 @@
+package session1;
+
 /**
         * Write a description of class student here.
         *
         * @author(Nam)
  * @version 1.0
         */
-//Ver
+
 public class Student{
 /**
  * Khai bao cac truong dung de luu gia tri cua cac thuoc tinh trong lop
