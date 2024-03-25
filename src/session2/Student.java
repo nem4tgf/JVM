@@ -1,4 +1,4 @@
-package session1;
+package session2;
 
 /**
         * Write a description of class student here.
