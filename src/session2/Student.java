@@ -9,7 +9,7 @@ package session2;
 
 public class Student{
 /**
- * Khai bao cac truong dung de luu gia tri cua cac thuoc tinh trong lop
+ * Khai bao cac truong dung de luu gia tri cua cac thuoc tinh trong lo
  */
 private int id;
 private String name;
