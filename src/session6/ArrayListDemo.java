@@ -52,7 +52,7 @@ public class ArrayListDemo {
         System.out.println("Array sau khi clear: "+size);
         System.out.println("List cuoi sau khi clear");
         display(student);
-        System.out.println("==========================");
+
     }
 
     public static void  display(ArrayList list){
