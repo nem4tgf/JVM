@@ -67,7 +67,7 @@ public class Account {
         System.out.println("Enter customer name: ");
         customerName = scanner.nextLine();
 
-        amount = 1000;
+        amount = 100000;
     }
 
     public void depositAndWithdraw(long amount, int type){
