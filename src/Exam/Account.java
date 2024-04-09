@@ -59,7 +59,7 @@ public class Account {
         }while (customerCode.length() !=5);
 
         do {
-            System.out.println("Enter account number (6 digits, starts with 100): ");
+            System.out.println("Enter account number (6 characters, starts with 100): ");
             accNumber = scanner.nextInt();
         }while (String.valueOf(accNumber).length() != 6 || accNumber < 100000 || accNumber >= 100999);
 
