@@ -32,10 +32,40 @@ public interface CustomerDAO {
         connection.close();
     }
 
+    public static void findCustomerById() throws SQLException {
+        Connection connection = MySQLConnectionDB.getMyConnection();
+
+        String query = "SELECT * FROM customers WHERE customer_id = ?  ";
+        PreparedStatement pstm = connection.prepareStatement(query);
+        pstm.setInt(1,3);
+        ResultSet rs = pstm.executeQuery();
+        while (rs.next()) {
+            System.out.println("==============Use PrepareStatement==============");
+            System.out.println("Customer id:" + rs.getInt("customer_id"));
+            System.out.println("First name:" + rs.getString(2));
+            System.out.println("Last name:" + rs.getString(3));
+            System.out.println("Email:" + rs.getString("email"));
+
+        }
+        connection.close();
+    }
 
 
-//    public static void main(String[] args) throws SQLException {
-//        getAllCustomer();
-//    }
+    public static void createCustomer() throws SQLException{
+        Connection connection = MySQLConnectionDB.getMyConnection();
+        String query = "INSERT INTO customer(customer_id, first_name, last_name, email) VALUES ( 5, 'Nguyen','Gia Huy', 'huy@fpt.edu')";
+        PreparedStatement pstm = connection.prepareStatement(query);
+        ResultSet count = pstm.executeQuery();
+        System.out.println(count);
+
+    }
+
+
+    public static void main(String[] args) throws SQLException {
+        getAllCustomer();
+        //findCustomerById();
+        createCustomer();
+
+    }
 
 }

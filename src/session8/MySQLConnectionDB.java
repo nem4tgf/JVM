@@ -10,7 +10,7 @@ public class MySQLConnectionDB {
     public static Connection getMyConnection() throws SQLException {
         Connection conn = null;
         String hostName = "localhost"; //url truy cap vao server
-        String dbName = "ecommerceFPT";//database name
+        String dbName = "ecommercefpt";//database name
         String userName = "root";
         String password = "";
 
