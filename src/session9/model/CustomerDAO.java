@@ -62,7 +62,7 @@ public interface CustomerDAO {
 
 
     public static void main(String[] args) throws SQLException {
-        getAllCustomer();
+       // getAllCustomer();
         //findCustomerById();
         createCustomer();
 

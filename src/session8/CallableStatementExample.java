@@ -8,7 +8,7 @@ import java.sql.Types;
 
 public class CallableStatementExample {
     public static void main(String[] args) throws SQLException {
-        Connection connection =MySQLConnectionDB.getMyConnection();
+        Connection connection = MySQLConnectionDB.getMyConnection();
         //An di cac sql engine
         String sql = "{call getCustomer(?,?,?,?)}";
 
