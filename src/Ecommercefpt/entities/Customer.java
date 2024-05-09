@@ -1,6 +1,6 @@
 package Ecommercefpt.entities;
 
-public class Customer {
+public class Customer extends Entity<Object> {
     private int customer_id;
     private String first_name;
     private String last_name;

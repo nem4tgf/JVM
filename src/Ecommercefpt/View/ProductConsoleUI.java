@@ -47,10 +47,11 @@ public class ProductConsoleUI {
         String product_desc = sc.nextLine();
         System.out.println("Enter product Price: ");
         double price = Double.parseDouble(sc.nextLine());
-        productController.createProductController();
+        Product product = new Product(pro_id,product_desc,name,price);
+        productController.createProductController(product);
     }
 
-    public void start() throws SQLException{
+    public static void start() throws SQLException{
         while (true){
             int choice = menu();
             switch (choice){

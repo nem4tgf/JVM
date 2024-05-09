@@ -16,6 +16,9 @@ public class Product {
         this.productDesc = productDesc;
     }
 
+    public Product(int proId, String productDesc, String name, double price) {
+    }
+
     public int getProductId() {
         return productId;
     }
