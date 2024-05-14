@@ -8,7 +8,9 @@ public class Controller<T extends Entity<?>> {
     public Controller(Model<T> model){
         this.model = model;
     }
-
+    public void addEntity(T entity) {
+        model.create(entity);
+    }
     public Model<T> getModel() {
         return model;
     }
@@ -17,7 +19,5 @@ public class Controller<T extends Entity<?>> {
         this.model = model;
     }
 
-    public void addEntity(T entity){
-        
-    }
+
 }

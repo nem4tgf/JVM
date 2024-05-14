@@ -21,4 +21,6 @@ public class Model<T extends Entity<?>> {
     }
 
 
+    public void create(T entity) {
+    }
 }

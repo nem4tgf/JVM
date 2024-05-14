@@ -1,20 +1,24 @@
 package Ecommercefpt.entities;
 
-public class OrderDetail {
+public class OrderDetail extends Entity<Integer> {
     private int id;
     private int quantity;
     private String date;
 
-    public OrderDetail() {
-    }
 
-    public OrderDetail(int id, int quantity, String date) {
-        this.id = id;
+    public OrderDetail(Integer id, int id1, int quantity, String date) {
+        super(id);
+        this.id = id1;
         this.quantity = quantity;
         this.date = date;
     }
 
-    public int getId() {
+    public OrderDetail(Integer id) {
+        super(id);
+    }
+
+    @Override
+    public Integer getId() {
         return id;
     }
 

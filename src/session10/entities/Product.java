@@ -1,27 +1,21 @@
-package Ecommercefpt.entities;
+package session10.entities;
 
-public class Product extends Entity<Integer> {
+public class Product {
     private int productId;
-    private double price;
     private String productName;
     private String productDesc;
+    private Double price;
 
-
-    public Product(Integer id) {
-        super(id);
+    public Product() {
     }
 
-    public Product(Integer id, int productId, double price, String productName, String productDesc) {
-        super(id);
+    public Product(int productId, String productName, String productDesc, Double price) {
         this.productId = productId;
-        this.price = price;
         this.productName = productName;
         this.productDesc = productDesc;
+        this.price = price;
     }
 
-//    public Product() {
-//        super();
-//    }
 
     public int getProductId() {
         return productId;
@@ -29,14 +23,6 @@ public class Product extends Entity<Integer> {
 
     public void setProductId(int productId) {
         this.productId = productId;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
     }
 
     public String getProductName() {
@@ -53,5 +39,13 @@ public class Product extends Entity<Integer> {
 
     public void setProductDesc(String productDesc) {
         this.productDesc = productDesc;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
     }
 }
